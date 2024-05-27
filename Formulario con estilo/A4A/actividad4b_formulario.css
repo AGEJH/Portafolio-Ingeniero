@@ -1,0 +1,22 @@
+/* Importar estilos del archivo principal */
+@import url('actividad4a_formulario.css');
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0e0d0d, #575555); /* Degradado de color rojo */
+    color: #dedede;
+    font-size: 16px; 
+}
+
+label {
+    font-weight: bold; /* Hacer que las etiquetas de los campos sean más visibles */
+}
+
+button {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+}
