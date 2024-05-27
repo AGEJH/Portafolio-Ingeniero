@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Búsqueda de Hoteles</title>
+    <link rel="stylesheet" href="actividad4c_formulario.css" id="stylesheet"> <!-- CSS principal -->
+    <style>
+        /* Estilos adicionales para hacer el formulario más accesible */
+        body {
+            font-size: 16px; /* Aumentar el tamaño de la fuente para facilitar la lectura */
+        }
+
+        label {
+            font-weight: bold; /* Hacer que las etiquetas de los campos sean más visibles */
+        }
+
+        button {
+            margin-top: 20px; /* Agregar espacio entre los botones y el formulario */
+            padding: 10px 20px; /* Reducir el tamaño de los botones para hacerlos más fáciles de tocar */
+            font-size: 16px; /* Aumentar el tamaño de la fuente de los botones */
+        }
+    </style>
+</head>
+<body>
+    <h1> FORMULARIO HOTEL VIENNA</h1>
+    <br>
+    <br>
+    <!-- Botones de cambio de estilo -->
+    <div>
+        <button onclick="cambiarEstilo('actividad4a_formulario.css')">Diseño Estándar</button>
+        <button onclick="cambiarEstilo('actividad4b_formulario.css')">Diseño Accesible</button>
+    </div>
+    <form>
+        <!-- Datos Personales -->
+        <legend>Datos Personales</legend>
+        <br>
+        <br>
+        <fieldset>
+            
+            <div class="obligatorio">
+                <label for="nombreusuario">Nombre de usuario:</label>
+                <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Escribe tu nombre de usuario" required>
+            </div>
+            <div class="obligatorio">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required>
+            </div>
+            <div class="obligatorio">
+                <label for="contraseñaconf">Confirmar contraseña:</label>
+                <input type="password" id="contraseñaconf" name="contraseñaconf" placeholder="Confirma tu contraseña" required>
+            </div>
+            <div class="obligatorio">
+                <label for="direccion">Dirección:</label>
+                <input type="text" placeholder="Calle Meconio N.47" id="direccion" name="direccion" placeholder="Escribe tu dirección" required>
+            </div>
+            <div class="obligatorio">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" placeholder="ej.Monterrey" name="ciudad" placeholder="Escribe tu ciudad" required>
+            </div>
+            <div class="obligatorio">
+                <label for="Estado">Estado:</label>
+                <input type="text" id="Estado" placeholder="ej.Colima" name="estado" placeholder="Escribe tu estado" required>
+            </div>
+        </fieldset>
+
+        <!-- Número de Huéspedes -->
+        <fieldset>
+            <legend>Número de Huéspedes</legend>
+            <input type="number" id="nhuespedes" name="nhuespedes" placeholder="Escribe el número de huéspedes" required>
+        </fieldset>
+
+        <!-- Servicios Disponibles -->
+        <fieldset>
+            <div class="obligatorio">
+                <label for="servicios">Servicios:</label>
+                <input type="text" id="servicios" name="servicios" placeholder="Escribe los servicios disponibles" required>
+            </div>
+        </fieldset>
+
+        <!-- Tipo de Habitación -->
+        <fieldset>
+            <div class="obligatorio">
+                <label for="habitacion">Tipo de Habitación:</label>
+                <input type="text" id="habitacion" name="habitacion" placeholder="Escribe el tipo de habitación" required>
+            </div>
+        </fieldset>
+
+        <!-- Tipo de Pensión -->
+        <fieldset>
+            <div class="obligatorio">
+                <label for="pension">Tipo de Pensión:</label>
+                <input type="text" id="pension" name="pension" placeholder="Escribe el tipo de pensión" required>
+            </div>
+        </fieldset>
+
+        <!-- Comentarios o Sugerencias -->
+        <fieldset>
+            <legend>Comentarios o Sugerencias</legend>
+            <textarea name="comentarios" id="comentarios" rows="5" cols="30" placeholder="Escribe tus comentarios o sugerencias"></textarea>
+        </fieldset>
+
+        <!-- Correo de Contacto y Política de Privacidad -->
+        <fieldset>
+            <legend>Correo de Contacto y Política de Privacidad</legend>
+            <div class="obligatorio">
+                <label for="emailcontacto">E-mail de contacto:</label>
+                <input type="text" id="emailcontacto" name="emailcontacto" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="obligatorio">
+                <input type="checkbox" id="politicasprivacidad" name="politicasprivacidad" required>
+                <label for="politicasprivacidad">Acepto las políticas de privacidad</label>
+            </div>
+        </fieldset>
+
+        <!-- Botones de Enviar y Limpiar -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+
+    <script>
+        function cambiarEstilo(nombreArchivo) {
+            document.getElementById('stylesheet').setAttribute('href', nombreArchivo);
+        }
+    </script>
+</body>
+</html>

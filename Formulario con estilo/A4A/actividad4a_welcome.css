@@ -1,0 +1,42 @@
+/* activdad4a_welcome.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4d4d; /* Color rojo suave */
+    color: #fff; /* Color de texto blanco para mayor contraste */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px; /* Añadido espaciado para los enlaces */
+    border-radius: 4px; /* Añadido borde redondeado */
+    background-color: #ff6666; /* Color de fondo rojo suave */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+nav ul li a:hover {
+    background-color: #ff9999; /* Cambio de color al pasar el cursor */
+}
